@@ -1,0 +1,47 @@
+:root {
+    --font: #f2f2f2;
+    --accent: #9B6A6C;
+    --success: #48742d;
+    --danger: #a62b39;
+    --table-odd: #3c3c3c;
+    --table-even: #4a4a4a;
+    --stormarn-color: #262626;
+    --dark: #262626;
+    --green: #0cc;
+    --dark-grey: #2A2B2A;
+    --dark-green: #055;
+    --scroll-green: #088;
+}
+
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--font);
+    font-family: 'Oswald', monospace;
+    font-size: 11pt;
+    background-color: var(--dark-grey);
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+h1 {
+    margin: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: GRAY;
+}
+a:active {
+    color: red;
+}
