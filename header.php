@@ -1,8 +1,16 @@
 <?php
+session_start();
 require_once "../config/dbh.php";
 require_once "backend/functions.php";
 ?>
-
+<script>
+function httpGet(theUrl) {
+let xmlHttp = new XMLHttpRequest();
+xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
+xmlHttp.send( null );
+return xmlHttp.responseText;
+}
+</script>
 <html lang="de">
 <head>
     <meta charset="utf-8">
@@ -25,7 +33,3 @@ require_once "backend/functions.php";
           crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<h1>Das TechnikTeam</h1>
-<main>
-
-</main>

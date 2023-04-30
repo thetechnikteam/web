@@ -8,6 +8,7 @@
     --stormarn-color: #262626;
     --dark: #262626;
     --green: #0cc;
+    --techGreen: #a1d334;
     --dark-grey: #2A2B2A;
     --dark-green: #055;
     --scroll-green: #088;
@@ -22,7 +23,7 @@
 
 body {
     color: var(--font);
-    font-family: 'Oswald', monospace;
+    font-family: 'Roboto', monospace;
     font-size: 11pt;
     background-color: var(--dark-grey);
     overflow-x: hidden;
@@ -34,6 +35,9 @@ h1 {
     font-size: 3rem;
     font-weight: 700;
 }
+h2 {
+    margin-bottom: 30px;
+}
 
 a {
     text-decoration: none;
@@ -44,4 +48,96 @@ a:hover {
 }
 a:active {
     color: red;
+}
+
+iframe {
+    max-width: 800px;
+    width: 80%;
+    height: 152px;
+}
+
+/* Custom classes */
+
+.login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark-green);
+    border: solid var(--dark-green);
+    border-radius: 12px;
+    height: 300px;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.login .pwField {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.login .pwField i {
+    font-size: 10rem;
+    color: grey;
+}
+
+.login .pwField .pwInput {
+    background: var(--dark);
+    border: solid var(--dark);
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.3rem;
+    width: 50%;
+    height: 40px;
+    color: white;
+}
+
+.request {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--dark-green);
+    border: solid var(--dark-green);
+    border-radius: 12px;
+    height: 500px;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.request .rqField {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+.request .rqField i {
+    font-size: 10rem;
+    color: grey;
+    margin-bottom: 20px;
+}
+
+.request .rqField .rqDes {
+    line-height: 1.5;
+    font-size: 1.3rem;
+}
+
+.request .rqField .rqInput {
+    background: var(--dark);
+    border: solid var(--dark);
+    border-radius: 7px;
+    outline: none;
+    font-size: 1.3rem;
+    width: 50%;
+    height: 40px;
+    color: white;
 }
