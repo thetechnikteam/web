@@ -35,7 +35,7 @@ if (!isset($_SESSION["team-login"]) || !$_SESSION["team-login"]) {
             newSongDiv.setAttribute("id", "songs");
             newSongDiv.setAttribute("style", "display: none");
             over.append(newSongDiv);
-            for (let i = 0; i < 5; i++) {
+            for (let i = 0; i < 5 && i < data.lenght; i++) {
                 let song = data[i];
                 newSongDiv.innerHTML = newSongDiv.innerHTML + '<iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/'+song["songId"]+'?utm_source=generator&theme=0" frameBorder="0" allowfullscreen="" allow="clipboard-write; encrypted-media; picture-in-picture" loading="eager"></iframe> <a style="position: relative; top: -66px; font-size: 20px" href="backend/song.post.php?delete='+song["id"]+'">❌</a><br>'
             }
